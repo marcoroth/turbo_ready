@@ -27,7 +27,7 @@ module TurboReady
         selector: selector
       }
 
-      TurboReady::String.new action(:invoke, "DOM", payload.to_json), turbo_ready_tag_builder: self
+      TurboReady::String.new action(:invoke, content: payload.to_json), turbo_ready_tag_builder: self
     end
   end
 end
